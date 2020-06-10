@@ -1,1 +1,1 @@
-<?php echo "PHP version installed: " . phpversion() . "\n";
+<?php echo phpversion() . "\n";

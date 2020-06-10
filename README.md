@@ -21,3 +21,6 @@
 ### PHP Modules
 
 * sudo ./php.sh -m
+* sudo ./cli.sh 'phpinfo(INFO_CONFIGURATION)'
+* sudo ./cli.sh 'phpinfo(INFO_ENVIRONMENT)'
+* sudo ./cli.sh 'phpinfo(INFO_VARIABLES)'
