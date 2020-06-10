@@ -2,14 +2,22 @@
 
 ## Build
 
-* **./build.sh** to build Docker image
+* **./build.sh** -> build Docker image
 
 ## Run
 
-* **./run.sh** to run test on **test.php**
+* **./run.sh** -> run test **test.php**
 
-## CLI experiments
+## CLI Experiments
 
-sudo ./cli.sh 'echo "Hello World!"'
+### Hello World aka Inline Code
 
-sudo ./php.sh -f test.php
+* sudo ./cli.sh 'echo "Hello World!"'
+
+### Run Script
+
+* sudo ./php.sh -f test.php
+
+### PHP Modules
+
+* sudo ./php.sh -m
