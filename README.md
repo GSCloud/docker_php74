@@ -2,11 +2,11 @@
 
 ## Build
 
-* **./build.sh** -> build Docker image
+* **sudo ./build.sh** -> build Docker image
 
 ## Run
 
-* **./run.sh** -> run test **test.php**
+* **sudo ./run.sh** -> run test **test.php**
 
 ## CLI Experiments
 
