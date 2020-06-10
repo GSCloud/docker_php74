@@ -14,13 +14,13 @@
 
 * sudo ./cli.sh 'echo "Hello World!"'
 
-### Run Script
-
-* sudo ./php.sh -f test.php
-
-### PHP Modules
+### PHP Info
 
 * sudo ./php.sh -m
 * sudo ./cli.sh 'phpinfo(INFO_CONFIGURATION)'
 * sudo ./cli.sh 'phpinfo(INFO_ENVIRONMENT)'
 * sudo ./cli.sh 'phpinfo(INFO_VARIABLES)'
+
+### Run a script
+
+* sudo ./php.sh -f test.php
