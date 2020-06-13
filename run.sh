@@ -14,7 +14,7 @@ if [ ! -r ".env" ]; then fail "Missing .env file!"; fi
 export $(grep -v '^#' .env | xargs -d '\n')
 
 info Entropy available
-docker run -it --rm gscloud/php74 cat /proc/sys/kernel/random/entropy_avail
+docker run -it --rm $TAG cat /proc/sys/kernel/random/entropy_avail
 
 info PHP version
 docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp $TAG php test.php

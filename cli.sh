@@ -6,4 +6,4 @@ ABSPATH=$(readlink -f $0)
 ABSDIR=$(dirname $ABSPATH)
 cd $ABSDIR
 
-docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gscloud/php74 php -r "$@;"
+docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gscloud/php747 php -r "$@;"
