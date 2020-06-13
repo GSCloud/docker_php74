@@ -9,11 +9,11 @@
 
 ## Run
 
-* **sudo ./run.sh** -> run test **test.php**
+* **sudo ./run.sh** -> run **test.php**
 
 ## CLI Experiments
 
-### Hello World aka Inline Code
+### Hello World
 
 * sudo ./cli.sh 'echo "Hello World!"'
 
@@ -30,4 +30,4 @@
 ### Usage
 
 * sudo docker run -it gscloudcz/php747 php --version
-* sudo docker run -it -v "$PWD":/usr/src/myapp -w /usr/src/myapp gscloudcz/php747 php -f test.php
+* sudo docker run -it -v "$PWD":/usr/src/myapp -w /usr/src/myapp gscloudcz/php747 php -f ./test.php
