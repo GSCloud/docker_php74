@@ -6,4 +6,5 @@ ABSPATH=$(readlink -f $0)
 ABSDIR=$(dirname $ABSPATH)
 cd $ABSDIR
 
-docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gscloud/php74 php "$@"
+export $(grep -v '^#' .env | xargs -d '\n')
+docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp $TAG php "$@"
