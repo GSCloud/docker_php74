@@ -1,7 +1,7 @@
 # PHP 7.4.8 custom container
 
-Docker hub: [https://hub.docker.com/repository/docker/gscloudcz/php74]  
-Github: [https://github.com/GSCloud/docker_php74]
+DockerHub: [https://hub.docker.com/repository/docker/gscloudcz/php74]  
+GitHub: [https://github.com/GSCloud/docker_php74]
 
 ## Build
 
@@ -18,7 +18,7 @@ run **./test.sh** to run a test on **test.php**
 `./php.sh -f test.php`  
 `./php.sh -m`
 
-### PHP Info
+### PHP info
 
 `docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gscloudcz/php74 php -r 'phpinfo(INFO_CONFIGURATION);'`
 
