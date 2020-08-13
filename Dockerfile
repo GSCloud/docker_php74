@@ -1,6 +1,6 @@
 ARG CODE_VERSION=latest
 ARG TERM=linux
-ARG LC_ALL=C.UTF-8
+ARG LC_ALL=en_US.UTF-8
 ARG DEBIAN_FRONTEND=noninteractive
 FROM ubuntu:${CODE_VERSION}
 RUN apt-get update -qq && apt-get upgrade -yqq && apt-get install -yqq --no-install-recommends curl haveged openssl software-properties-common language-pack-en-base language-pack-en && locale-gen en_US.UTF-8
