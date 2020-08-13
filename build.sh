@@ -18,4 +18,5 @@ export $(grep -v '^#' .env | xargs -d '\n')
 
 if [ -z "$TAG" ]; then fail "Missing TAG definition!"; fi
 
-docker build -t $TAG .
+docker build --pull -t $TAG .
+. ./test.sh
