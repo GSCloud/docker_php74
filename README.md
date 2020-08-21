@@ -24,5 +24,5 @@ run **./test.sh** to run a test on **test.php**
 
 ### Usage
 
-`docker run -it gscloudcz/php74 php --version`  
-`docker run -it -v "$PWD":/usr/src/myapp -w /usr/src/myapp gscloudcz/php74 php -f ./test.php`
+`docker run -it --rm gscloudcz/php74 php --version`  
+`docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gscloudcz/php74 php -f ./test.php`
