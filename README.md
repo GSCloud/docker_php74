@@ -26,3 +26,5 @@ run **./test.sh** to run a test on **test.php**
 
 `docker run -it --rm gscloudcz/php74 php --version`  
 `docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gscloudcz/php74 php -f ./test.php`
+
+Author: Filip Oščádal aka Fred Brooker 💌 <oscadal@gscloud.cz>
