@@ -12,4 +12,4 @@ fi
 if [ ! -r ".env" ]; then fail "Missing .env file!"; fi
 export $(grep -v '^#' .env | xargs -d '\n')
 
-docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp $TAG php -r "$@;"
+docker run --name php74 --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp $TAG php -r "$@;"

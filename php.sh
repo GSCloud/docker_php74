@@ -3,6 +3,7 @@
 export PATH=$PATH:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin:/usr/local/go/bin
 ABSPATH=$(readlink -f $0)
 ABSDIR=$(dirname $ABSPATH)
+
 cd $ABSDIR
 
 command -v docker >/dev/null 2>&1 || fail "Docker is NOT installed!"
@@ -12,4 +13,4 @@ fi
 if [ ! -r ".env" ]; then fail "Missing .env file!"; fi
 export $(grep -v '^#' .env | xargs -d '\n')
 
-docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp $TAG php "$@"
+docker run -it --name php74 --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp $TAG php "$@"
