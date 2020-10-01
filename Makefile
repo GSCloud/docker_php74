@@ -4,7 +4,7 @@ info:
 	@echo "\e[1;32m👾 Welcome to Docker PHP 7.4 👾"
 	@echo "🆘 \e[0;1mmake build\e[0m - rebuild image"
 	@echo "🆘 \e[0;1mmake docs\e[0m - rebuild documentation"
-	@echo "🆘 \e[0;1mmake everything\e[0m - run all make points"
+	@echo "🆘 \e[0;1mmake everything\e[0m - run all Makefile tasks"
 	@echo "🆘 \e[0;1mmake push\e[0m - push Docker image"
 	@echo "🆘 \e[0;1mmake test\e[0m - test image"
 
@@ -20,4 +20,4 @@ test:
 push:
 	@docker push gscloudcz/php74:latest
 
-everything: docs build test
+everything: docs build test push
