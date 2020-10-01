@@ -9,6 +9,7 @@ GitHub: [https://github.com/GSCloud/docker_php74]
 * 🆘 make build - rebuild image
 * 🆘 make docs - rebuild documentation
 * 🆘 make everything - run all make points
+* 🆘 make push - push Docker image
 * 🆘 make test - test image
 
 ## Examples
@@ -19,10 +20,10 @@ GitHub: [https://github.com/GSCloud/docker_php74]
 
 `./php.sh -m`
 
-`docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gscloudcz/php74 php -r 'phpinfo(INFO_CONFIGURATION);'`
+`docker run --name php74 --rm gscloudcz/php74 php -r 'phpinfo(INFO_CONFIGURATION);'`
 
-`docker run -it --rm gscloudcz/php74 php --version`  
+`docker run --name php74 --rm gscloudcz/php74 php --version`
 
-`docker run -it --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gscloudcz/php74 php -f ./test.php`
+`docker run --name php74 --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gscloudcz/php74 php -f ./test.php`
 
 Author: Filip Oščádal aka Fred Brooker 💌 <oscadal@gscloud.cz>

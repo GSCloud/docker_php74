@@ -5,6 +5,7 @@ info:
 	@echo "🆘 \e[0;1mmake build\e[0m - rebuild image"
 	@echo "🆘 \e[0;1mmake docs\e[0m - rebuild documentation"
 	@echo "🆘 \e[0;1mmake everything\e[0m - run all make points"
+	@echo "🆘 \e[0;1mmake push\e[0m - push Docker image"
 	@echo "🆘 \e[0;1mmake test\e[0m - test image"
 
 docs:
@@ -15,5 +16,8 @@ build:
 
 test:
 	@/bin/bash ./test.sh
+
+push:
+	@docker push gscloudcz/php74:latest
 
 everything: docs build test
