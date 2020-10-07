@@ -1,4 +1,4 @@
-== PHP 7.4.10
+== PHP 7.4.11
 
 DockerHub: [https://hub.docker.com/repository/docker/gscloudcz/php74] +
 GitHub: [https://github.com/GSCloud/docker_php74]
@@ -11,6 +11,30 @@ GitHub: [https://github.com/GSCloud/docker_php74]
 * 🆘 make everything - run all make points
 * 🆘 make push - push Docker image
 * 🆘 make test - test image
+
+=== Packages
+
+* php-imagick
+* php-lua
+* php-mongodb
+* php-redis
+* php-sodium
+* php-ssh2
+* php-uuid
+* php-yaml
+* php7.4
+* php7.4-cli
+* php7.4-curl
+* php7.4-gd
+* php7.4-intl
+* php7.4-json
+* php7.4-mbstring
+* php7.4-mysql
+* php7.4-pgsql
+* php7.4-readline
+* php7.4-sqlite3
+* php7.4-xml
+* php7.4-zip
 
 === Examples
 
