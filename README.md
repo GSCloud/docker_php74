@@ -1,4 +1,4 @@
-# PHP 7.4.10
+# PHP 7.4.11
 
 DockerHub: [https://hub.docker.com/repository/docker/gscloudcz/php74]  
 GitHub: [https://github.com/GSCloud/docker_php74]
