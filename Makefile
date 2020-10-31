@@ -22,6 +22,6 @@ test:
 
 push:
 	@echo "🔨 \e[1;32m Pushing image to DockerHub\e[0m"
-	@docker push gscloudcz/php74:latest
+	@docker push gscloudcz/php74:7.4.12
 
-everything: docs build test push
+everything: docs build test
