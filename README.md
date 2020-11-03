@@ -1,15 +1,14 @@
-# PHP 7.4.11
+# PHP 7.4.12
 
-DockerHub: [https://hub.docker.com/repository/docker/gscloudcz/php74]  
-GitHub: [https://github.com/GSCloud/docker_php74]
+DockerHub [https://hub.docker.com/repository/docker/gscloudcz/php74]  
+GitHub [https://github.com/GSCloud/docker_php74]
 
 ## Usage
 
 * **make** - CLI help
-* 🆘 make build - rebuild image
+* 🆘 make build - build image
 * 🆘 make docs - rebuild documentation
-* 🆘 make everything - run all make points
-* 🆘 make push - push Docker image
+* 🆘 make push - push image into the registry
 * 🆘 make test - test image
 
 ## Packages
