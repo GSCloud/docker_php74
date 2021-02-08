@@ -6,7 +6,7 @@ info:
 	@echo "🆘 \e[0;1mmake build\e[0m - build image"
 	@echo "🆘 \e[0;1mmake docs\e[0m - rebuild documentation"
 	@echo "🆘 \e[0;1mmake push\e[0m - push image into the registry"
-	@echo "🆘 \e[0;1mmake test\e[0m - test image"
+	@echo "🆘 \e[0;1mmake test\e[0m - test image\n"
 
 docs:
 	@echo "\n🔨 \e[1;32m Building documentation\e[0m"
