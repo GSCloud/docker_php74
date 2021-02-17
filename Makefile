@@ -9,19 +9,19 @@ info:
 	@echo "🆘 \e[0;1mmake test\e[0m - test image\n"
 
 docs:
-	@echo "\n🔨 \e[1;32m Building documentation\e[0m"
-	@/bin/bash ./create_pdf.sh
+	@echo "🔨 \e[1;32m Building documentation\e[0m"
+	@bash ./bin/create_pdf.sh
 
 build:
-	@echo "\n🔨 \e[1;32m Building Docker image\e[0m"
-	@/bin/bash ./build.sh
+	@echo "🔨 \e[1;32m Building Docker image\e[0m"
+	@bash ./bin/build.sh
 
 test:
-	@echo "\n🔨 \e[1;32m Testing Docker image\e[0m"
-	@/bin/bash ./test.sh
+	@echo "🔨 \e[1;32m Testing Docker image\e[0m"
+	@bash ./bin/test.sh
 
 push:
-	@echo "\n🔨 \e[1;32m Pushing image to DockerHub\e[0m"
+	@echo "🔨 \e[1;32m Pushing image to DockerHub\e[0m"
 	@docker push gscloudcz/php74:latest
 
-everything: docs build test
+everything: docs build test push
