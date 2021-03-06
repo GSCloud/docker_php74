@@ -9,14 +9,11 @@ GitHub [https://github.com/GSCloud/docker_php74]
 
 ## Examples
 
-```./cli.sh 'echo "Hello World!"'  
-
-./php.sh -r 'echo "Hello World";'  
-
+```bash
+./cli.sh 'echo "Hello World!"'  
+./php.sh -r 'echo "Hello World!";'  
 ./php.sh -m  
-
 docker run --rm gscloudcz/php74 php --version  
-
 docker run --rm -v "$PWD":/usr/src/myapp -w /usr/src/myapp gscloudcz/php74 php -f ./test.php
 ```
 
