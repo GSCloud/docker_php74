@@ -1,1 +1,2 @@
 Fred Brooker <f@mxd.cz> project owner
+Kryštof Šara <k@n0p.cz> developer, tester
