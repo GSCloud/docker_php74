@@ -1,3 +1,4 @@
+#@author Filip Oščádal <git@gscloud.cz>
 all: info
 
 info:
@@ -13,15 +14,15 @@ docs:
 	@bash ./bin/create_pdf.sh
 
 build:
-	@echo "🔨 \e[1;32m Building Docker image\e[0m"
+	@echo "🔨 \e[1;32m Building image\e[0m"
 	@bash ./bin/build.sh
 
 test:
-	@echo "🔨 \e[1;32m Testing Docker image\e[0m"
+	@echo "🔨 \e[1;32m Testing image\e[0m"
 	@bash ./bin/test.sh
 
 push:
-	@echo "🔨 \e[1;32m Pushing image to DockerHub\e[0m"
-	@docker push gscloudcz/php74:latest
+	@echo "🔨 \e[1;32m Pushing image to Docker hub\e[0m"
+	docker push gscloudcz/php74:latest
 
 everything: docs build test push
